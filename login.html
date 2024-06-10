@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #main {
+            width: 75%;
+            margin: 70px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 240px);
+            grid-template-rows: 500px;
+            gap: 200px;
+            justify-self: center;
+            align-items: center;
+        }
+        
+        button {
+            width: 100%;
+            color: aliceblue;
+            background-color: black;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight: 550;
+            font-size: 12px;
+        }
+        
+        button:hover {
+            background-color: rgba(79, 79, 79, 0.9);
+        }
+        
+        input {
+            width: 100%;
+            margin-top: 20px;
+            padding: 2px 0px;
+            font-size: 10px;
+            text-transform: none !important;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        
+        p {
+            margin: 30px 0px 45px;
+        }
+        
+        #main>div:nth-child(1)>p {
+            font-size: 9px;
+        }
+        
+        #main>div:nth-child(2)>p {
+            font-size: 12px;
+            margin: 10px 0px 8px 0px;
+        }
+        
+        #main>div:nth-child(2)>p+p {
+            font-size: 12px;
+            margin: 10px 0px 80px 0px;
+        }
+        
+        h2 {
+            font-stretch: narrower;
+            font-weight: 550;
+            font-size: 18px;
+            font-family: 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        #main>div:nth-child(2) {
+            width: 380px;
+        }
+        
+        #main>div:nth-child(2)>button {
+            width: 250px;
+            padding: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            font-weight: 550;
+            font-size: 12px;
+        }
+        
+        #option {
+            width: 75%;
+            margin: 300px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 140px);
+            grid-template-rows: repeat(9, 50px);
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+            gap: 80px;
+        }
+        
+        #option>div>ul>li {
+            width: 900px;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+        }
+        
+        #second {
+            width: 75%;
+            margin: -400px auto 90px;
+            display: flex;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        #second>p:nth-child(1) {
+            margin-right: 850px;
+        }
+        
+        #second>p:nth-child(2) {
+            margin-right: 20px;
+        }
+        
+        #second>p:nth-child(3) {
+            color: #e8ddd6;
+        }
+        
+        #end {
+            width: 75%;
+            margin: auto;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-stretch: extra-condensed;
+        }
+        
+        ul {
+            list-style: none;
+            line-height: 8px;
+            font-size: 9px;
+        }
+        
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        
+        #nav {
+            display: flex;
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+            justify-content: space-between;
+            background-color: transparent;
+            position: fixed;
+            top: 0px;
+        }
+        
+        #menu {
+            display: grid;
+            width: 1.6%;
+            height: 20%;
+            margin-top: 0.7%;
+            align-content: space-around;
+            margin-left: 2%;
+            background-color: transparent;
+        }
+        
+        #menu>div {
+            height: 1px;
+            background-color: black;
+            transition: 0.4s;
+        }
+        
+        #one {
+            width: 90%;
+        }
+        
+        #two {
+            width: 60%;
+        }
+        
+        #three {
+            width: 70%;
+        }
+        
+        #menu:hover div {
+            width: 90%;
+        }
+        
+        #logo {
+            width: 16%;
+        }
+        
+        #logo>img {
+            width: 100%;
+        }
+        
+        #gap {
+            width: 40%;
+            background-color: transparent;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: none;
+            color: black;
+        }
+        
+        #cart {
+            display: flex;
+            width: 5%;
+            height: 35%;
+            background-color: transparent;
+            margin-right: 2%;
+        }
+        
+        #search {
+            margin-top: 0.7%;
+        }
+        
+        #loghelp {
+            display: flex;
+            width: 10%;
+            background-color: transparent;
+            justify-content: space-between;
+            margin-top: 0.7%;
+        }
+        
+        #cart>img {
+            width: 45%;
+            height: 100%;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    </div>
+    <div id="main">
+        <div>
+            <h2>LOG IN</h2>
+            <input type="text" placeholder="E-MAIL" id="email"><br>
+            <input type="password" placeholder="PASSWORD" id="password">
+            <p>
+                HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <button id="login">LOG IN</button>
+        </div>
+        <div>
+            <h2>REGISTER</h2>
+            <p>
+                IF YOU DON'T HAVE A ACCOUNT 
+               <button id="signup">CREATE ACCOUNT</button>
+        </div>
+</body>
+
+</html>
+<script src="login.js"></script>
